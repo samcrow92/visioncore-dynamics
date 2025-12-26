@@ -34,7 +34,7 @@ This is a basic Django project setup.
 
     **Alternatively, run with GUNICORN:**
     ```bash
-    gunicorn visioncore.wsgi:application --reload --bind 127.0.0.1:8000
+    gunicorn visioncore.wsgi:application --log-level debug --reload --bind 127.0.0.1:8000
     ```
 
     You can now access your project at `http://127.0.0.1:8000/`.
