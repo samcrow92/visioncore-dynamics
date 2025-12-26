@@ -1,0 +1,6 @@
+Django
+djangorestframework
+django-filter
+markdown
+gunicorn
+whitenoise
