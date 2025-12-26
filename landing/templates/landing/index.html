@@ -1,12 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VisionCore Dynamics - Landing Page</title>
-</head>
-<body>
-    <h1>Welcome to VisionCore Dynamics</h1>
-    <p>This is your landing page.</p>
-</body>
-</html>
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block title %}VisionCore - AI B2B Commerce{% endblock %}
+
+{% block content %}
+<section class="container hero">
+    <h1>Supercharge your B2B commerce with AI</h1>
+    <p>Automate inventory, predict trends, and optimize your supply chain with our intelligent vision platform.</p>
+
+    <!-- Restored Product Carousel -->
+    <div class="hero-visual" style="background: transparent; border: none; box-shadow: none; overflow: visible;">
+        <div class="product-carousel">
+            <!-- Product 1 -->
+            <div class="product-slide active">
+                <div class="palette-card">
+                    <div class="palette">
+                        <div class="color"><span>SCAN</span></div>
+                        <div class="color"><span>DETECT</span></div>
+                        <div class="color"><span>ANALYZE</span></div>
+                        <div class="color"><span>SYNC</span></div>
+                        <div class="color"><span>REPORT</span></div>
+                    </div>
+                    <div class="stats">
+                        <span>Vision Sensor X1</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path
+                                d="M4 7.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S5.5 9.83 5.5 9 4.83 7.5 4 7.5zm10 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-slide">
+                <div class="palette-card">
+                    <div class="palette">
+                        <div class="color"><span>TRACK</span></div>
+                        <div class="color"><span>TRACE</span></div>
+                        <div class="color"><span>LOG</span></div>
+                        <div class="color"><span>OPT</span></div>
+                        <div class="color"><span>FLOW</span></div>
+                    </div>
+                    <div class="stats">
+                        <span>Smart Camera V2</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path
+                                d="M4 7.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S5.5 9.83 5.5 9 4.83 7.5 4 7.5zm10 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-slide">
+                <div class="palette-card">
+                    <div class="palette">
+                        <div class="color"><span>AI-1</span></div>
+                        <div class="color"><span>AI-2</span></div>
+                        <div class="color"><span>AI-3</span></div>
+                        <div class="color"><span>AI-4</span></div>
+                        <div class="color"><span>AI-5</span></div>
+                    </div>
+                    <div class="stats">
+                        <span>Optical Unit Pro</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path
+                                d="M4 7.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S5.5 9.83 5.5 9 4.83 7.5 4 7.5zm10 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-slide">
+                <div class="palette-card">
+                    <div class="palette">
+                        <div class="color"><span>DATA</span></div>
+                        <div class="color"><span>LINK</span></div>
+                        <div class="color"><span>NODE</span></div>
+                        <div class="color"><span>EDGE</span></div>
+                        <div class="color"><span>CLOUD</span></div>
+                    </div>
+                    <div class="stats">
+                        <span>Edge Processor Z</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path
+                                d="M4 7.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S5.5 9.83 5.5 9 4.83 7.5 4 7.5zm10 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container articles-section">
+    <div class="section-header">
+        <h2>Latest Insights</h2>
+        <p style="color: var(--text-secondary);">Stay ahead with our latest research and articles.</p>
+    </div>
+
+    <div class="articles-grid">
+        <!-- Article 1 -->
+        <div class="card-article-wrapper">
+            <a class="card1" href="#">
+                <h3>AI in Logistics</h3>
+                <p class="small">Discover how autonomous vision systems are reshaping warehouse efficiency.</p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Article 2 -->
+        <div class="card-article-wrapper">
+            <a class="card1" href="#">
+                <h3>Vision Systems 2025</h3>
+                <p class="small">Top trends predicting the future of industrial optical recognition.</p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Article 3 -->
+        <div class="card-article-wrapper">
+            <a class="card1" href="#">
+                <h3>Edge Computing</h3>
+                <p class="small">Why processing data at the source is critical for real-time compliance.</p>
+                <div class="go-corner" href="#">
+                    <div class="go-arrow">
+                        →
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="container features-section">
+    <div class="section-header">
+        <h2>Everything you need to scale</h2>
+        <p style="color: var(--text-secondary);">Powerful tools designed for modern B2B operations.</p>
+    </div>
+
+    <div class="features-grid">
+        <div class="card">
+            <div class="feature-icon">AI</div>
+            <h3>Predictive Analytics</h3>
+            <p>Forecast demand with 99% accuracy using our proprietary AI models.</p>
+        </div>
+        <div class="card">
+            <div class="feature-icon">⚡</div>
+            <h3>Real-time Sync</h3>
+            <p>Keep your inventory and catalog in perfect sync across all channels.</p>
+        </div>
+        <div class="card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Enterprise Security</h3>
+            <p>Bank-grade encryption and compliance for your sensitive business data.</p>
+        </div>
+        <div class="card">
+            <div class="feature-icon">📊</div>
+            <h3>Smart Reports</h3>
+            <p>Generate actionable insights with one click using our report builder.</p>
+        </div>
+        <div class="card">
+            <div class="feature-icon">🔄</div>
+            <h3>Automated Workflows</h3>
+            <p>Reduce manual tasks by automating order processing and fulfillment.</p>
+        </div>
+        <div class="card">
+            <div class="feature-icon">🌍</div>
+            <h3>Global Infrastructure</h3>
+            <p>Deploy anywhere with our edge-optimized global network.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section style="background-color: var(--text-primary); color: white; padding: 5rem 0; margin-top: 4rem;">
+    <div class="container" style="text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: white;">Ready to transform your business?</h2>
+        <p style="color: #ccc; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Join thousands of B2B companies using VisionCore to drive growth.
+        </p>
+        <a href="#" class="btn" data-text="Get Started Now">Get Started Now</a>
+    </div>
+</section>
+{% endblock %}
